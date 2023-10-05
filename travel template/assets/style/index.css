@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'K2D';
+    src: url(../fonts/K2D-Bold.woff);
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Regular.woff);
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins-Light.woff);
+}
+
+
+.travel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px 0;
+    background-color: #F2F8FB;
+}
+.travel .heading, .all-services .heading{
+    margin-bottom: 30px;
+    padding: 0 25%;
+}
+.travel .heading h1, .all-services .heading h1{
+    text-align: center;
+    font-family: 'K2D';
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.animate__animated.animate__bounce.animate__slow{
+    --animate-duration: 2s;
+  }
+  
+
+.travel .heading p, .all-services .heading p{
+    text-align: center;
+    font-family: 'Poppins-Regular';
+    font-size: 16px;
+    color: #888EAD;
+
+}
+.box{
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.box .box-img{
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.box .box-img img{
+    width: 100%;
+    height: 100%;
+}
+.box .box-img .book{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #00000049 !important ; 
+}
+.box .box-img .book button{
+    position: absolute;
+    font-family: 'K2D';
+    font-size: 15px;
+    border: none;   
+    border-radius: 5px;
+    padding: 10px 25px;
+    transition: .6s; 
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    background-color: #ed4a28;
+}
+.box .box-img:hover .book{
+    opacity: 1;
+}
+.box .box-img:hover button{
+    top: 50%;
+}
+.box .box-img .book:hover{
+    background-color: #e43d1b;
+}
+.box .box-info{
+    padding: 10px 20px 20px;
+}
+.box .box-info h2{
+    font-family: 'K2D';
+    font-size: 24px;
+}
+.box .box-info p{
+    font-family: 'Poppins-Light';
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px 0;
+    color: #646464;
+}
+.box .box-info .price-details{
+    display: flex;
+    justify-content: space-between;
+}
+.box-info .price-details .price h2{
+    font-family: 'K2D';
+    font-size: 24px;
+    color: #ff7a58;
+}
+.box-info .price-details .price p{
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: rgb(128, 128, 128);
+}
+.box-info .price-details .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 7px;
+}
+.box-info .price-details .details p{
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: rgb(128, 128, 128);
+}
+.box-info .price-details .details ul{
+    display: flex;
+    column-gap: 8px;
+    color: rgb(255, 196, 0);
+    font-size: 14px;
+}
+.view{
+    color: white;
+    background-color: #ed4a28;
+    font-family: 'Poppins';
+    font-size: 18px;
+    padding: 15px 50px;
+    margin: 60px auto ;
+    border: none;
+    border-radius: 7px;
+    transition: .5s;
+}
+.view:hover{
+    background-color: #e43411;
+    transform: scale(.9);
+}
+.all-services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px 0;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+.service .icon{
+    width: 80px;
+    height: 80px;
+    border: 3px solid #ed4a28;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #ed4a28;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: .5s;
+}
+.service .icon i{
+    position: relative;
+    z-index: 999;
+}
+.service .icon .circle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    border-radius: 50%;
+    transition: .5s;
+    background-color: #ed4a28;
+}
+.service .icon:hover{
+    color: white;
+}
+.service .icon:hover .circle{
+    transform: translate(-50%,-50%) scale(.9);
+}
+.service .service-heading{
+    font-family: "K2D";
+    font-weight: 400;
+    font-size: 24px;
+   
+}
+.service .service-detail{
+    color: #888888;
+    font-size: 16px;
+  
+}
+
+
+
+
+
+
+
